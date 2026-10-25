@@ -1,0 +1,30 @@
+{
+  "manifest_version": 3,
+  "name": "YouTube Transcript Helper",
+  "version": "1.4.19",
+  "author": "KRMSHN",
+  "description": "Kopyala veya zaman kodlarıyla birlikte YouTube transkriptini dışa aktar.",
+  "homepage_url": "https://kerimsahin.com.tr",
+  "permissions": ["storage"],
+  "host_permissions": [
+    "https://www.youtube.com/*",
+    "https://youtube.com/*",
+    "https://api-free.deepl.com/*",
+    "https://translation.googleapis.com/*"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [{
+    "matches": ["https://www.youtube.com/*", "https://youtube.com/*"],
+    "js": ["page-bridge.js"],
+    "run_at": "document_idle",
+    "world": "MAIN"
+  }, {
+    "matches": ["https://www.youtube.com/*", "https://youtube.com/*"],
+    "js": ["content.js"],
+    "css": ["styles.css"],
+    "run_at": "document_idle",
+    "world": "ISOLATED"
+  }]
+}
