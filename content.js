@@ -359,7 +359,7 @@
 
   function buildPanel() {
     if (root) return;
-    const logoUrl = chrome.runtime.getURL('branding/logo.svg');
+    const logoUrl = chrome.runtime.getURL('branding/logo.jpg');
     root = document.createElement('section');
     root.id = ID;
     root.className = 'yth-panel';
