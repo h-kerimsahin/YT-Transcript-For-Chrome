@@ -2,13 +2,13 @@
 
 Chrome / Edge için Manifest V3 uzantısı. YouTube video sayfasındaki beğeni düğmesinin yanında **Transkript** düğmesi görünür.
 
-**Sürüm:** 1.4.19 · **Depo:** https://github.com/h-kerimsahin/YT-Transcript-For-Chrome
+**Sürüm:** 1.5.0 · **Depo:** https://github.com/h-kerimsahin/YT-Transcript-For-Chrome
 
 ## İndirme
 
 Hazır kurulum paketi (zip):
 
-**[YT-Transcript-For-Chrome-v1.4.19.zip](https://github.com/h-kerimsahin/YT-Transcript-For-Chrome/releases/download/v1.4.19/YT-Transcript-For-Chrome-v1.4.19.zip)**
+**[YT-Transcript-For-Chrome-v1.5.0.zip](https://github.com/h-kerimsahin/YT-Transcript-For-Chrome/releases/download/v1.5.0/YT-Transcript-For-Chrome-v1.5.0.zip)**
 
 Tüm sürümler: [Releases](https://github.com/h-kerimsahin/YT-Transcript-For-Chrome/releases)
 
@@ -42,7 +42,20 @@ Uzantı videonun YouTube tarafından sunulan altyazılarını kullanır; altyaz�
 | `content.js` | YouTube sayfasına enjekte edilen panel ve arayüz |
 | `page-bridge.js` | Sayfa bağlamında çalışan transkript köprüsü |
 | `styles.css` | Panel stilleri |
+| `icons/` | 16 / 32 / 48 / 128 px uzantı ikonları |
+
+## Chrome Web Store Paketi
+
+Depodaki kaynak koddan mağaza paketi şu dosyalarla oluşturulur: `manifest.json`, `background.js`, `content.js`, `page-bridge.js`, `styles.css`, `icons/` ve `LICENSE`. Paket doğrudan Chrome Web Store geliştirici panelinden yüklenebilir.
 
 ## Lisans
 
-Belirtilmemiştir.
+[PolyForm Noncommercial License 1.0.0](LICENSE)
+
+- **Ticari satış ve ticari kullanım yasaktır.** Ticari kullanım için ayrıca yazılı izin gerekir.
+- Kaynak kod açıktır; kişisel, eğitim, araştırma, kar amacı gütmeyen kurum ve açık kaynak topluluk projelerinde özgürce kullanılabilir, incelenebilir ve değiştirilebilir.
+- Bu lisans OSI onaylı bir "açık kaynak" lisansı değildir; kaynak kodu açık (source-available) ve ticari kullanımı kısıtlı bir lisanstır. Ticari faaliyetleriniz varsa lütfen önce iletişime geçin.
+
+```
+Required Notice: Copyright 2026 KRMSHN (h-kerimsahin) - https://github.com/h-kerimsahin
+```
