@@ -2,13 +2,13 @@
 
 Chrome / Edge için Manifest V3 uzantısı. YouTube video sayfasındaki beğeni düğmesinin yanında **Transkript** düğmesi görünür.
 
-**Sürüm:** 1.5.0 · **Depo:** https://github.com/h-kerimsahin/YT-Transcript-For-Chrome
+**Sürüm:** 1.5.1 · **Depo:** https://github.com/h-kerimsahin/YT-Transcript-For-Chrome
 
 ## İndirme
 
 Hazır kurulum paketi (zip):
 
-**[YT-Transcript-For-Chrome-v1.5.0.zip](https://github.com/h-kerimsahin/YT-Transcript-For-Chrome/releases/download/v1.5.0/YT-Transcript-For-Chrome-v1.5.0.zip)**
+**[YT-Transcript-For-Chrome-v1.5.1.zip](https://github.com/h-kerimsahin/YT-Transcript-For-Chrome/releases/download/v1.5.1/YT-Transcript-For-Chrome-v1.5.1.zip)**
 
 Tüm sürümler: [Releases](https://github.com/h-kerimsahin/YT-Transcript-For-Chrome/releases)
 
@@ -43,10 +43,11 @@ Uzantı videonun YouTube tarafından sunulan altyazılarını kullanır; altyaz�
 | `page-bridge.js` | Sayfa bağlamında çalışan transkript köprüsü |
 | `styles.css` | Panel stilleri |
 | `icons/` | 16 / 32 / 48 / 128 px uzantı ikonları |
+| `branding/` | Panel içinde kullanılan yerel marka görselleri |
 
 ## Chrome Web Store Paketi
 
-Depodaki kaynak koddan mağaza paketi şu dosyalarla oluşturulur: `manifest.json`, `background.js`, `content.js`, `page-bridge.js`, `styles.css`, `icons/` ve `LICENSE`. Paket doğrudan Chrome Web Store geliştirici panelinden yüklenebilir.
+Depodaki kaynak koddan mağaza paketi şu dosyalarla oluşturulur: `manifest.json`, `background.js`, `content.js`, `page-bridge.js`, `styles.css`, `icons/`, `branding/` ve `LICENSE`. Paket doğrudan Chrome Web Store geliştirici panelinden yüklenebilir.
 
 ## Lisans
 

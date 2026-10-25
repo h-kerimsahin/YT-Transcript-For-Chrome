@@ -359,6 +359,7 @@
 
   function buildPanel() {
     if (root) return;
+    const logoUrl = chrome.runtime.getURL('branding/logo.svg');
     root = document.createElement('section');
     root.id = ID;
     root.className = 'yth-panel';
@@ -371,7 +372,7 @@
       <div class="yth-preview" aria-live="polite">Transkript yükleniyor…</div>
       <div class="yth-actions"><button class="yth-copy">Metni kopyala</button><select class="yth-format" aria-label="Dosya biçimi"><option value="txt">TXT</option><option value="md">Markdown</option></select><button class="yth-export">Dosyayı indir</button></div>
       <div class="yth-note">Önce YouTube altyazıları kullanılır. Harici çeviri açıksa DeepL kotası dolduğunda Google Cloud devreye girer.</div>
-      <div class="yth-meta"> <img src="https://kerimsahin.com.tr/assets/images/logo.jpg" height="20" /> </div>`;
+      <div class="yth-meta"><img src="${logoUrl}" alt="KRMSHN logo" height="20"></div>`;
     document.body.append(root);
     root.querySelector('.yth-close').onclick = () => { root.hidden = true; };
     root.querySelector('.yth-refresh').onclick = () => refreshTranscript();

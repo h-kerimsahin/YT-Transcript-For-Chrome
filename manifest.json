@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
   "name": "YouTube Transcript Helper",
-  "version": "1.5.0",
+  "version": "1.5.1",
   "author": "KRMSHN",
   "description": "Kopyala veya zaman kodlarıyla birlikte YouTube transkriptini dışa aktar.",
   "homepage_url": "https://kerimsahin.com.tr",
@@ -32,5 +32,9 @@
     "css": ["styles.css"],
     "run_at": "document_idle",
     "world": "ISOLATED"
+  }],
+  "web_accessible_resources": [{
+    "resources": ["branding/logo.svg"],
+    "matches": ["https://www.youtube.com/*", "https://youtube.com/*"]
   }]
 }
